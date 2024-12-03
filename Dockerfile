@@ -24,4 +24,4 @@ RUN setcap cap_net_bind_service=+ep /usr/local/bin/caddy
 ENTRYPOINT ["/usr/local/bin/caddy"]
 CMD ["run", "--config", "/root/Caddyfile"]
 
-#docker run --name naiveproxy --restart unless-stopped --network=host -v /root/nginx/html:/var/www/html -v /root/naiveproxy/Caddyfile:/root/Caddyfile -v /root/ssl:/root/ssl -v /usr/share/zoneinfo/Asia/Shanghai:/etc/localtime -d naiveproxy
+#docker run --name naiveproxy --restart unless-stopped --network=host -v /root/nginx/html:/var/www/html -v /root/naiveproxy/Caddyfile:/root/Caddyfile -v /usr/share/zoneinfo/Asia/Shanghai:/etc/localtime -d naiveproxy
